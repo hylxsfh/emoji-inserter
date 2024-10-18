@@ -9,6 +9,13 @@
 		"emoji",
 		"insert"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hylxsfh/word-jump.git"
+	},
+	"bugs": {
+		"url": "https://github.com/hylxsfh/word-jump/issues"
+	},
 	"engines": {
 		"vscode": "^1.74.0"
 	},
