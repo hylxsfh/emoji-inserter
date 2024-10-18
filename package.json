@@ -1,0 +1,53 @@
+{
+	"name": "vscode-emoji-inserter",
+	"displayName": "Emoji Inserter",
+	"description": "Insert emojis by typing ##",
+	"version": "0.0.1",
+	"publisher": "hylxsfh",
+	"icon": "images/emoji.png",
+	"keywords": [
+		"emoji",
+		"insert"
+	],
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [],
+		"configuration": {
+			"title": "Emoji Inserter",
+			"properties": {
+				"emojipedia.allowNetworkAccess": {
+					"type": "boolean",
+					"default": true,
+					"description": "Allow the extension to access Emojipedia for emoji lookup"
+				},
+				"emojiInserter.apiKey": {
+					"type": "string",
+					"default": "e7fdc4729b9322c3dcdf37b96bcfb4c346f6b6a5",
+					"description": "API key for Emoji API"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^14.14.37",
+		"@types/vscode": "^1.60.0",
+		"typescript": "^4.3.5"
+	},
+	"dependencies": {
+		"axios": "^0.21.4"
+	}
+}
