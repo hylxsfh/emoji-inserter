@@ -8,4 +8,4 @@ Insert emoji after you type two number sign(##)
 3. Select the emoji you want, and it will be inserted at the current cursor position, replacing the two '#' symbols that were entered earlier.
 
 ## example
-![效果图](images/emoji-inserter-example.gif)
+![](images/emoji-inserter-example.gif)
