@@ -2,7 +2,7 @@
 	"name": "vscode-emoji-inserter",
 	"displayName": "Emoji Inserter",
 	"description": "Insert emojis by typing ##",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"publisher": "hylxsfh",
 	"icon": "images/emoji.png",
 	"keywords": [
