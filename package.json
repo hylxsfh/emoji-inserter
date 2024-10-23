@@ -11,10 +11,10 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/hylxsfh/word-jump.git"
+		"url": "https://github.com/hylxsfh/emoji-inserter.git"
 	},
 	"bugs": {
-		"url": "https://github.com/hylxsfh/word-jump/issues"
+		"url": "https://github.com/hylxsfh/emoji-inserter/issues"
 	},
 	"engines": {
 		"vscode": "^1.74.0"
