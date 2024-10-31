@@ -2,6 +2,8 @@
 
 Insert emoji after you type two number sign(##)
 
+Search results are from https://emoji-api.com
+
 ## Usage
 1. type two number sign(##), an input form will pop up.
 2. After typing the name of the emoji and pressing enter, a list of emojis searched from the internet will be displayed.
