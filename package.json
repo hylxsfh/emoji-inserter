@@ -2,7 +2,7 @@
 	"name": "vscode-emoji-inserter",
 	"displayName": "Emoji Inserter",
 	"description": "Insert emojis by typing ##",
-	"version": "0.1.5",
+	"version": "0.2.5",
 	"publisher": "hylxsfh",
 	"icon": "images/emoji.png",
 	"keywords": [
@@ -40,6 +40,13 @@
 					"type": "string",
 					"default": "e7fdc4729b9322c3dcdf37b96bcfb4c346f6b6a5",
 					"description": "API key for Emoji API"
+				},
+				"emojiInserter.triggerCharacter": {
+					"type": "string",
+					"default": "#",
+					"description": "Character that triggers emoji search when typed twice (e.g., ## or ??)",
+					"maxLength": 1,
+					"minLength": 1
 				}
 			}
 		}

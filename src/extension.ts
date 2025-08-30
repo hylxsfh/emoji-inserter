@@ -15,7 +15,8 @@ export function activate (context: vscode.ExtensionContext) {
 		const changes = event.contentChanges;
 
 		for (const change of changes) {
-			if (change.text === '#' && isDoubleNumberSign(document, change.range.end)) {
+			const triggerChar = vscode.workspace.getConfiguration('emojiInserter').get('triggerCharacter', '#');
+			if (change.text === triggerChar && isDoubleTriggerChar(document, change.range.end, triggerChar)) {
 				handleEmojiInsertion(editor, change.range.end);
 			}
 		}
@@ -24,10 +25,10 @@ export function activate (context: vscode.ExtensionContext) {
 	context.subscriptions.push(disposable);
 }
 
-function isDoubleNumberSign (document: vscode.TextDocument, position: vscode.Position): boolean {
+function isDoubleTriggerChar (document: vscode.TextDocument, position: vscode.Position, triggerChar: string): boolean {
 	const line = document.lineAt(position.line);
 	const text = line.text.substring(Math.max(0, (position.character + 1) - 2), position.character + 1);
-	return text === '##';
+	return text === triggerChar + triggerChar;
 }
 
 async function handleEmojiInsertion (editor: vscode.TextEditor, position: vscode.Position) {
